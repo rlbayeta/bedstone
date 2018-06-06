@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	position: relative;
+
+	#main-content{
+		min-height: 80vh;
+	}
+}
+
+.wrapper{
+	width: 100%;
+    margin: 0 auto;
+}
+
+a {
+	color: #CCCCCC;
+	text-decoration: none;
+
+	&:hover{
+	    color: #E3E3E3;
+		text-decoration: none;
+	}
+}
+
+.scrollup {
+	width: 40px;
+	height: 40px;
+	opacity: 1;
+	position: fixed;
+	bottom: 22px;
+	right: 20px;
+	display: none;
+	text-indent: -9999px;
+	background: url(../images/scroll-top-arrow.png) no-repeat left top;
+	z-index: 999;
+	display: none;
+}

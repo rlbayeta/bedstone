@@ -1,0 +1,177 @@
+/** Search form */
+.search-form {
+  @extend .form-inline;
+}
+
+.search-form label {
+  @extend .form-group;
+
+  font-weight: normal;
+}
+
+.search-form .search-field {
+  @extend .form-control;
+}
+
+.search-form .search-submit {
+  @extend .btn;
+  @extend .btn-secondary;
+}
+
+@mixin title-font-size {
+  font-size: 15px;
+}
+
+
+
+.input-required {
+  color: $theme-required;
+}
+
+.clearfix::after{
+	content: "";
+    clear: both;
+    display: block;
+}
+
+
+
+.urbanpower-margin-left {
+  margin-left: 3.52%;
+}
+
+.urbanpower_text_area,
+.urbanpower_input_field,
+.captcha-wrapper {
+  margin: 0 0 12px;
+}
+
+
+.urbanpower_input_field,
+div.captcha {
+  input {
+    width: 75%;
+  }
+}
+
+.urbanpower-textarea-right {
+  width: 85%;
+}
+
+.label-color {
+  color: $form-label;
+}
+
+.urbanpower-widget-title-inner {
+  color: $form-label;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.urbanpower-form-wrapper {
+
+  .urbanpower-form-wrapper-inner {
+  
+    #form-left-sidebar {
+      margin-right: 2.5%;
+
+      .captcha {
+        label {
+          width: auto;
+          margin-bottom: 2px;
+          clear: right;
+          color: $form-label;
+          float: left;
+          left: 0;
+          position: relative;
+          top: 0;
+          @include title-font-size;
+        }
+
+        img {
+          float: left;
+          clear: both;
+        }
+
+        input {
+          clear: left;
+          float: left;
+        }
+      } /** captcha **/
+
+      .form-submit-btn {
+        background-color: #007f99;
+      }
+
+    }
+
+    .urbanpower-left-sidebar {
+      color: $white;
+      width: 31.66%;
+      float: left;
+    }
+
+    .urbanpower-content {
+      width: 65.83%;
+      float: left;
+      
+      .urbanpower-form-two-thirds {
+
+        .urbanpower_input_field {
+          input {
+            width: 88%;
+          }
+        }
+      }
+
+      .urbanpower_text_area {
+        div[id*='urbanpower_form_message-wrap'] {
+          width: 88%;
+        }
+
+        .mce-top-part {
+          background-color: rgb(207, 209, 207);
+        }
+      }
+
+      .urbanpower-form-columns {
+        
+
+        .urbanpower-sidebar-empty {
+          background-color: #e6e6e6;
+          margin: 0 0 12px;
+        }
+
+        .urbanpower-form-area-3,
+        .urbanpower-form-area-4,
+        .urbanpower-form-area-6,
+        .urbanpower-form-area-7 {
+          
+          .urbanpower-widget-empty-title {
+              background-color: $light-bluegreen;
+              padding-bottom: 5px;
+
+            .urbanpower-widget-empty-title-inner {
+              font-size: 17px;
+              font-weight: 500;
+            }
+          }
+          
+        }
+        
+        .urbanpower-form-area-3,
+        .urbanpower-form-area-4 {
+          width: 48.24%;
+        }
+
+        .urbanpower-form-area-6,
+        .urbanpower-form-area-7 {
+          width: 48.24%;
+        }
+
+      }
+    }
+
+  }
+
+}

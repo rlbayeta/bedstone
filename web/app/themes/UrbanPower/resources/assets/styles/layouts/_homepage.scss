@@ -1,0 +1,57 @@
+.header-banner {
+	color: #FFFFFF;
+	padding: 100px 0 0 0;
+	min-height: 450px;
+	background: #00bdbd;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: left top;
+
+	@include media-breakpoint-down(sm){
+	    height: 0 !important;
+		padding: 40px 0 0 0;
+	}
+
+	.header-title {
+	    font-size: 58px;
+	    font-weight: 700;
+		font-stretch: 100%;
+		font-style: normal;
+    	margin-bottom: 20px;
+		text-transform: uppercase;
+	    text-shadow: 0px 0px 4px #000000;
+	    
+		@include media-breakpoint-down(sm){
+			font-size: 34px;
+		}
+	}
+
+	.header-content {
+	    font-size: 18px;
+    	line-height: 26px;
+	    margin: 50px 10px 5px 0;
+
+	    @include media-breakpoint-down(sm){
+			font-size: 15px;
+			margin: 15px 10px 5px;
+		}
+	}
+
+	.header-buttons {
+		margin-top: 35px;
+		.header-login-btn {
+			@extend .urban-button;
+
+			@include media-breakpoint-down(sm){
+				margin: 10px 0;
+			}
+		}
+		.header-reg-btn {
+			@extend .urban-button;
+
+			@include media-breakpoint-down(sm){
+				margin: 10px 0;
+			}
+		}
+	}
+}

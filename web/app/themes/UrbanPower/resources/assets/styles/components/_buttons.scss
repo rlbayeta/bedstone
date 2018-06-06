@@ -1,0 +1,19 @@
+.urban-button {
+    opacity: 0.7;
+    color: #FFFFFF;
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 10px 30px;
+    border-radius: 4px;
+    display: inline-block;
+	text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid #AACCCC;
+	background-color: #444444;
+
+	&:hover{
+		opacity: 1;
+	}
+}

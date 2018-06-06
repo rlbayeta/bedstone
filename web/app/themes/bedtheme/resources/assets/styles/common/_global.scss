@@ -1,0 +1,19 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	position: relative;
+
+	#body-container{
+		padding-bottom:60px;
+		min-height: 95vh;
+		height: 95vh;
+	}
+	#main-content{
+		height: 100%;
+	}
+}
